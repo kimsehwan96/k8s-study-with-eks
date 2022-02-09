@@ -25,6 +25,9 @@ resources:
               - ".0.0/16"
         EnableDnsSupport: true
         EnableDnsHostnames: true
+        Tags:
+          - Key: Name
+            Value: VPC for EKS Sample Test
     InternetGateway:
       Type: AWS::EC2::InternetGateway
     VPCGatewayAttachment:
